@@ -1,0 +1,3 @@
+include ':pdf-management-by-ashef'
+include ':app'
+rootProject.name = "PDF Mangement Library"
