@@ -14,17 +14,27 @@ import android.widget.ListView;
 
 import com.asheftajwaramin.pdfmanagementbyashef.DownloadFromURL;
 import com.asheftajwaramin.pdfmanagementbyashef.ShowDownloads;
+import com.asheftajwaramin.pdfmanagementbyashef.ViewFromURL;
 
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;
-    Button button;
+    Button button, viewButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = findViewById(R.id.listView);
         button = findViewById(R.id.downloadButton);
+        viewButton = findViewById(R.id.onlineView);
+        viewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ViewFromURL viewFromURL = new ViewFromURL(MainActivity.this, "https://file-examples-com.github.io/uploads/2017/10/file-example_PDF_1MB.pdf");
+                viewFromURL.viewPDF();
+            }
+        });
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

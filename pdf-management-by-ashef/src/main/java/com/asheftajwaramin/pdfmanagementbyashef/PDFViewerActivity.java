@@ -31,7 +31,7 @@ public class PDFViewerActivity extends AppCompatActivity {
 
         if (file.canRead())
         {
-            pdfView.fromFile(file).defaultPage(1).enableSwipe(true).onLoad(new OnLoadCompleteListener() {
+            pdfView.fromFile(file).defaultPage(1).swipeVertical(true).enableSwipe(true).onLoad(new OnLoadCompleteListener() {
                 @Override
                 public void loadComplete(int nbPages) {
                     Toast.makeText(PDFViewerActivity.this, "This PDF has " + nbPages + " page", Toast.LENGTH_SHORT).show();

@@ -22,12 +22,15 @@
             android:layout_height="100dp" />
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Name"
@@ -36,6 +39,13 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:gravity="start"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/close_icon"
+                android:id="@+id/deleteIcon"
+                />
 
         </LinearLayout>
 

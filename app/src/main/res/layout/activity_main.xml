@@ -13,6 +13,12 @@
         android:text="Download"
         android:id="@+id/downloadButton"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Online"
+        android:id="@+id/onlineView"
+        />
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
