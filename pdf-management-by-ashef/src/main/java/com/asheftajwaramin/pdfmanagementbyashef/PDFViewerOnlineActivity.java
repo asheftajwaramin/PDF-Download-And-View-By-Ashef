@@ -44,9 +44,9 @@ public class PDFViewerOnlineActivity extends AppCompatActivity {
     {
         DownloadManager downloadManager = (DownloadManager) this.getSystemService(Context.DOWNLOAD_SERVICE);
         Uri uri = Uri.parse(url);
-        fileName = url.substring(url.lastIndexOf("/")+1);
+        fileName = "temp.pdf";
         DownloadManager.Request request =  new DownloadManager.Request(uri);
-        request.setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS +"temp/" ,fileName);
+        request.setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS +"temp/" , fileName);
         downloadManager.enqueue(request);
         MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(this);
         alertDialogBuilder.setCancelable(false);
