@@ -30,6 +30,7 @@ dependencies {
           DownloadFromURL downloadFromURL = new DownloadFromURL(context, urlString); 
           downloadFromURL.downloadPDF();
 ```
+### You can handle download complete listener also (check source MainActivity). And downloading status is already visible on Notification tray.  
 
 ## Add downloaded PDF in your ListView
 ```
