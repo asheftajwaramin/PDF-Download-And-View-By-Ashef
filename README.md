@@ -15,7 +15,7 @@
 dependencies {
          ...
          ...
-	        implementation 'com.github.asheftajwaramin:PDF-Download-And-View-By-Ashef:0.0.1'
+	        implementation 'com.github.asheftajwaramin:PDF-Download-And-View-By-Ashef:0.0.2'
 	}
 ```
 
