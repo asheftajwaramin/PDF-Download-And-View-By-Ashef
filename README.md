@@ -15,13 +15,13 @@
 dependencies {
          ...
          ...
-	        implementation 'com.github.asheftajwaramin:PDF-Download-And-View-By-Ashef:0.0.1'
+	        implementation 'com.github.asheftajwaramin:PDF-Download-And-View-By-Ashef:0.0.2'
 	}
 ```
 
 # What you can do?
 
-## Download pdf from url
+## Download PDF from url
 ```
 //FileName String Should contain .pdf extention
           DownloadFromURL downloadFromURL = new DownloadFromURL(context, urlString, fileName ); 
@@ -29,6 +29,11 @@ dependencies {
 //Or you can use without giving a File name
           DownloadFromURL downloadFromURL = new DownloadFromURL(context, urlString); 
           downloadFromURL.downloadPDF();
+```
+## View PDF from online
+```
+	  ViewFromURL viewFromURL = new ViewFromURL(context, urlString);
+                      viewFromURL.viewPDF();
 ```
 ### You can handle download complete listener also (check source MainActivity). And downloading status is already visible on Notification tray.  
 
